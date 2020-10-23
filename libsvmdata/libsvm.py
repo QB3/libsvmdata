@@ -26,7 +26,9 @@ NAMES = {'finance': 'regression/log1p.E2006.train',
          'sector_test': 'multiclass/sector/sector.t',
          'url': 'binary/url_combined',
          'webspam': 'binary/webspam_wc_normalized_trigram.svm',
-         }
+         'smallNORB': 'multiclass/smallNORB',
+         'mnist': 'multiclass/mnist',
+         'rcv1_multiclass': 'multiclass/rcv1_train.multiclass'}
 
 N_FEATURES = {'finance': 4272227,
               'kdda_train': 20216830,
@@ -38,7 +40,9 @@ N_FEATURES = {'finance': 4272227,
               'sector_test': 55197,
               'url': 3231961,
               'webspam': 16609143,
-              }
+              'smallNORB': 18_432,
+              'mnist': 780,
+              'rcv1_multiclass': 47_236}
 
 
 def download_libsvm(dataset, destination, replace=False):
