@@ -28,7 +28,9 @@ NAMES = {'finance': 'regression/log1p.E2006.train',
          'webspam': 'binary/webspam_wc_normalized_trigram.svm',
          'smallNORB': 'multiclass/smallNORB',
          'mnist': 'multiclass/mnist',
-         'rcv1_multiclass': 'multiclass/rcv1_train.multiclass'}
+         'rcv1_multiclass': 'multiclass/rcv1_train.multiclass',
+         'sector': 'multiclass/sector/sector.scale',
+         'protein': 'multiclass/protein.t'}
 
 N_FEATURES = {'finance': 4272227,
               'kdda_train': 20216830,
@@ -42,7 +44,9 @@ N_FEATURES = {'finance': 4272227,
               'webspam': 16609143,
               'smallNORB': 18_432,
               'mnist': 780,
-              'rcv1_multiclass': 47_236}
+              'rcv1_multiclass': 47_236,
+              'sector': 55_197,
+              'protein': 14_895}
 
 
 def download_libsvm(dataset, destination, replace=False):
@@ -73,6 +77,7 @@ def get_X_y(dataset, compressed_path, multilabel, replace=False):
         n_features_total = N_FEATURES[dataset]
         print("Loading svmlight file...")
         with open(tmp_path, 'rb') as f:
+            import ipdb; ipdb.set_trace()
             X, y = load_svmlight_file(
                 f, n_features=n_features_total, multilabel=multilabel)
 
