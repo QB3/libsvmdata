@@ -18,6 +18,7 @@ NAMES = {
     'kdda_train': 'binary/kdda.bz2',
     'mnist': 'multiclass/mnist.bz2',
     'news20': 'binary/news20.binary.bz2',
+    'news20_multiclass': 'multiclass/news20.bz2',
     'rcv1_multiclass': 'multiclass/rcv1_train.multiclass.bz2',
     'rcv1_topics_test': 'multilabel/rcv1_topics_test_2.svm.bz2',
     'rcv1_train': 'binary/rcv1_train.binary.bz2',
@@ -27,6 +28,7 @@ NAMES = {
     'smallNORB': 'multiclass/smallNORB.bz2',
     'url': 'binary/url_combined.bz2',
     'webspam': 'binary/webspam_wc_normalized_trigram.svm.bz2',
+    'aloi': 'multiclass/aloi.bz2'
 }
 
 N_FEATURES = {
@@ -36,6 +38,7 @@ N_FEATURES = {
     'kdda_train': 20216830,
     'mnist': 780,
     'news20': 1355191,
+    'news20_multiclass':  62_061,
     'rcv1_multiclass': 47_236,
     'rcv1_topics_test': 47236,
     'rcv1_train': 47236,
@@ -45,6 +48,7 @@ N_FEATURES = {
     'smallNORB': 18_432,
     'url': 3231961,
     'webspam': 16609143,
+    'aloi': 128
 }
 
 
